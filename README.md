@@ -1,9 +1,9 @@
 # siemens-simatic-s7-rtpmidi
-Minimal rtpMIDI implementation for Siemens Simatic S7 PLCs.  
-Originally developed to connect a Behringer X-Touch Exterder Unit to a S7 plc.  
+Minimal implementation of the rtpMidi protocol for Siemens Simatic S7 PLCs.  
+Originally developed to connect a Behringer X-Touch Extender Unit to a S7 PLC.  
   
-The S7 plc acts as a UDP server, listening on port 5004 and 5005.  
-The session initiator sends at first an intiation packet to port 5004. If it's answerded with ok it does the same for port 5005 with following sync messages and data messages, containing the MIDI commends.
+The S7 PLC acts as a UDP server, listening at port 5004 and 5005.  
+The session initiator (e.g. X-Touch Extender) sends at first an intiation packet to PLC port 5004. If it's answerded with ok it does the same for port 5005 with following sync messages and data messages, containing the MIDI commands.
 
 ## Credits
 + https://github.com/lathoub/Arduino-AppleMIDI-Library
